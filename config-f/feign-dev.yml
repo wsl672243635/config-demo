@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: feignt
+server:
+  port: 8086
+
+eureka:
+  client:
+    service-url:
+      defaultZone : http://localhost:8080/eureka/
+
+hystrix:
+  metrics:
+    enabled: true
+
+
+feign:
+  hystrix:
+    enabled: true
