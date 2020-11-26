@@ -1,0 +1,12 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: client1
+eureka:
+  client:
+    service-url:
+#      注册中心地址
+      defaultZone : http://localhost:8080/eureka/
+    register-with-eureka: true
+    fetch-registry: true
