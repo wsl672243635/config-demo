@@ -1,6 +1,9 @@
 spring:
   application:
     name: feignt
+  zipkin:
+    base-url: http://loaclhost:9411
+
 server:
   port: 8086
 
@@ -12,7 +15,6 @@ eureka:
 hystrix:
   metrics:
     enabled: true
-
 
 feign:
   hystrix:
